@@ -45,7 +45,7 @@
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 8,
+    "uniqCompNum": 9,
     "versionPublish": "5.1.4"
   },
   "pages": {
@@ -675,6 +675,98 @@
           "_isUserblock": true,
           "_sourceTheme": "lightamp",
           "_cid": "sfNekVaHwG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".container-fluid": {
+              "width": "100%"
+            },
+            ".carousel-img": {
+              "width": "100%",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "& when not (@showSubTitle)": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "padding-bottom": "2rem",
+              "color": "#7f7e7e"
+            },
+            ".amp-carousel-button": {
+              "width": "50px",
+              "height": "50px",
+              "border-radius": "50%"
+            },
+            "p.mbr-text": {
+              "padding-top": "2rem",
+              "padding-bottom": "0",
+              "margin": "0"
+            },
+            ".mbr-section-btn": {
+              "padding-top": "2rem"
+            },
+            "amp-img": {
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "cursor": "pointer",
+                "-webkit-box-shadow": "0px 0px 80px -10px rgba(0, 0, 0, 0.3)",
+                "box-shadow": "0px 0px 80px -10px rgba(0, 0, 0, 0.3)"
+              }
+            },
+            "a.control": {
+              "position": "absolute",
+              "width": "16px",
+              "height": "16px",
+              "right": "48px",
+              "top": "32px",
+              ".close": {
+                "position": "relative",
+                "width": "32px",
+                "height": "32px"
+              },
+              ".close:before, .close:after": {
+                "position": "absolute",
+                "left": "15px",
+                "content": "' '",
+                "height": "33px",
+                "width": "2px",
+                "background-color": "#fff"
+              },
+              ".close:before": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)"
+              },
+              ".close:after": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)"
+              }
+            }
+          },
+          "_name": "lightbox3",
+          "_customHTML": "<section class=\"lightbox3 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main,amp-carousel,amp-image-lightbox\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Screen Bg\" name=\"fullScreen\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked=\"\">\n    <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n    <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n    <select title=\"Images\" name=\"imagesAmount\">\n        <option value=\"2\">2</option>\n        <option value=\"3\">3</option>\n        <option value=\"4\">4</option>\n        <option value=\"5\">5</option>\n        <option value=\"6\" selected=\"\">6</option>\n        <option value=\"7\">7</option>\n        <option value=\"8\">8</option>\n        <option value=\"9\">9</option>\n        <option value=\"10\">10</option>\n    </select>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6efe9\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container-fluid\">\n        <h2 mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" class=\"mbr-section-title align-center mbr-fonts-style mbr-bold\">\n        Wooranna Park Primary School</h2>\n        <h3 mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center  mbr-fonts-style\" mbr-theme-style=\"display-6\">Student Website Design</h3>\n        <div class=\"slider-box\"><amp-carousel class=\"carousel\" height=\"300\" layout=\"fixed-height\" type=\"carousel\"><amp-img class=\"carousel-img mobirise-loader image-without-link\" src=\"@PROJECT_PATH@/assets/images/img-9476.jpg\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\" height=\"300\" width=\"400\" alt=\"Mobirise\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9476.jpg\" alt=\"Mobirise\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader image-without-link\" src=\"@PROJECT_PATH@/assets/images/img-9473.jpg\" mbr-class=\"{'super-hide': imagesAmount < 2}\" on=\"tap:lightbox2\" role=\"button\" tabindex=\"0\" height=\"300\" width=\"400\" alt=\"Mobirise\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9473.jpg\" alt=\"Mobirise\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader image-without-link\" src=\"@PROJECT_PATH@/assets/images/img-9474.jpg\" mbr-class=\"{'super-hide': imagesAmount < 3}\" on=\"tap:lightbox3\" role=\"button\" tabindex=\"0\" height=\"300\" width=\"400\" alt=\"Mobirise\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9474.jpg\" alt=\"Mobirise\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader image-without-link\" src=\"@PROJECT_PATH@/assets/images/img-9470.jpg\" mbr-class=\"{'super-hide': imagesAmount < 4}\" on=\"tap:lightbox4\" role=\"button\" tabindex=\"0\" height=\"300\" width=\"400\" alt=\"Mobirise\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9470.jpg\" alt=\"Mobirise\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader image-without-link\" src=\"@PROJECT_PATH@/assets/images/img-9468.jpg\" mbr-class=\"{'super-hide': imagesAmount < 5}\" on=\"tap:lightbox5\" role=\"button\" tabindex=\"0\" height=\"300\" width=\"400\" alt=\"Mobirise\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9468.jpg\" alt=\"Mobirise\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader image-without-link\" src=\"@PROJECT_PATH@/assets/images/img-9467.jpg\" mbr-class=\"{'super-hide': imagesAmount < 6}\" on=\"tap:lightbox6\" role=\"button\" tabindex=\"0\" height=\"300\" width=\"400\" alt=\"Mobirise\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9467.jpg\" alt=\"Mobirise\">\n                </amp-img></amp-carousel>\n            \n        </div>\n        <p class=\"mbr-text align-center mbr-fonts-style mbr-black\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cupiditate rerum ipsum tempora vero. Fugit facilis possimus assumenda ipsa, sapiente eius sunt fuga saepe nemo. Necessitatibus consequuntur, recusandae consequatur suscipit.</p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-white\" href=\"https://mobiri.se\">View More</a>\n        </div>\n    </div>\n    <amp-image-lightbox id=\"lightbox1\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 1}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox2\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 2}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox3\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 3}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox4\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 4}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox5\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 5}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox6\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 6}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox7\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 7}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox8\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 8}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox9\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 9}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n    <amp-image-lightbox id=\"lightbox10\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 10}\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n</section>",
+          "_cid": "sfNjrhmKRe",
+          "_anchor": "lightbox3-8",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
