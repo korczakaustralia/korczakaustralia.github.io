@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-07-05_1147",
-    "currentPage": "page2.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "lightamp",
       "title": "LightAMP",
@@ -48,7 +48,7 @@
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 140,
+    "uniqCompNum": 141,
     "versionPublish": "5.2.0",
     "imageResize": false,
     "screenshot": "screenshot.png",
@@ -619,6 +619,229 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": "popup-builder",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            ".mbr-row": {
+              "justify-content": "center",
+              "@media (min-width: 768px)": {
+                "margin-left": "-1.5rem",
+                "margin-right": "-1.5rem"
+              }
+            },
+            "p": {
+              "margin": "0",
+              "padding": "0"
+            },
+            ".card-wrapper": {
+              "background": "@cardBg",
+              "border-radius": ".3rem",
+              "-webkit-box-shadow": "0 10px 40px 0 rgba(0, 0, 0, 0.2)",
+              "box-shadow": "0 10px 40px 0 rgba(0, 0, 0, 0.2)",
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              }
+            },
+            ".form-wrapper": {
+              ".mbr-section-btn": {
+                "margin": ".5rem",
+                ".btn": {
+                  "margin": "0 !important"
+                }
+              }
+            },
+            ".card-img amp-img": {
+              "width": "100%",
+              "margin": "auto"
+            },
+            ".card-title": {
+              "width": "100%",
+              "margin": "0",
+              "line-height": "1.5",
+              "color": "#000000"
+            },
+            ".on-load-popup&, amp-lightbox&": {
+              ".mbr-popup": {
+                "width": "100%",
+                "min-height": "100%",
+                "position": "absolute",
+                "display": "flex",
+                "align-items": "center"
+              }
+            },
+            "&.on-load-popup": {
+              "position": "fixed",
+              "top": "0",
+              "left": "0",
+              "bottom": "0",
+              "right": "0",
+              "background": "transparent",
+              "animation": "show",
+              "animation-fill-mode": "forwards",
+              "visibility": "hidden",
+              "overflow-y": "auto",
+              "z-index": "1000",
+              ".popup-close": {
+                "> span": {
+                  "width": "24px",
+                  "height": "24px"
+                }
+              },
+              "@keyframes show": {
+                "100%": {
+                  "visibility": "visible"
+                }
+              }
+            },
+            ".mbr-popup": {
+              ".popup-close": {
+                "position": "absolute",
+                "right": "1rem",
+                "margin": "-1rem -1rem -1rem auto",
+                "padding": "1rem",
+                "font-size": "1.5rem",
+                "cursor": "pointer",
+                "opacity": ".75",
+                "&:hover": {
+                  "opacity": "1"
+                },
+                "&:focus": {
+                  "outline": "none"
+                },
+                "> span": {
+                  "font-size": "24px !important",
+                  "color": "#000000 !important"
+                }
+              }
+            },
+            ".popup-notification": {
+              "width": "100%",
+              "margin-top": "3rem",
+              "color": "#fff",
+              "font-size": "25px",
+              "text-align": "center"
+            },
+            ".mbr-form": {
+              "justify-content": "center",
+              "text-align": "center",
+              "@media (min-width: 768px)": {
+                "display": "flex",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "-webkit-align-items": "center",
+                "align-items": "center"
+              }
+            },
+            "&.popup-builder": {
+              "background-color": "#fff",
+              ".mbr-overlay": {
+                "position": "absolute"
+              },
+              ".amp-modal-dialog": {
+                "margin": "0 auto",
+                "padding-top": "60px",
+                "padding-bottom": "60px",
+                "z-index": "2"
+              }
+            },
+            ".amp-modal-dialog": {
+              "margin": ".5rem",
+              "padding": "0"
+            },
+            ".mbr-form-row": {
+              "display": "flex",
+              "-webkit-flex-wrap": "wrap",
+              "-ms-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "justify-content": "center",
+              "margin-right": "-0.5rem",
+              "margin-left": "-0.5rem",
+              "> [class*=\"mbr-col\"]": {
+                "padding-left": ".5rem",
+                "padding-right": ".5rem"
+              }
+            },
+            ".field": {
+              "padding-top": ".5rem",
+              "padding-bottom": ".5rem"
+            },
+            ".submit-message": {
+              "width": "100%"
+            },
+            ".mbr-form-row > div": {
+              "margin-bottom": "0"
+            },
+            ".mbr-overlay": {
+              "bottom": "0",
+              "left": "0",
+              "position": "fixed",
+              "right": "0",
+              "top": "0",
+              "z-index": "0"
+            },
+            "@media (min-width: 576px)": {
+              ".amp-modal-dialog": {
+                "max-width": "500px",
+                "margin": "1.75rem auto"
+              },
+              ".modal-sm": {
+                "max-width": "300px"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".modal-lg, .modal-xl": {
+                "max-width": "800px"
+              }
+            },
+            "@media (min-width: 1200px)": {
+              ".modal-xl": {
+                "max-width": "1140px"
+              }
+            },
+            ".popup-header": {
+              "display": "flex",
+              "-ms-flex-align": "start",
+              "align-items": "flex-start",
+              "-ms-flex-pack": "justify",
+              "justify-content": "space-between",
+              "padding": "1rem"
+            },
+            ".popup-text": {
+              "margin-bottom": "1rem"
+            },
+            ".popup-body": {
+              "position": "relative",
+              "-ms-flex": "1 1 auto",
+              "flex": "1 1 auto",
+              "padding": "1rem"
+            },
+            ".popup-footer": {
+              "display": "flex",
+              "-ms-flex-align": "center",
+              "align-items": "center",
+              "justify-content": "center",
+              "padding": "1rem"
+            },
+            ".pt-0": {
+              "padding-top": "0 !important"
+            },
+            ".pb-0": {
+              "padding-bottom": "0 !important"
+            }
+          },
+          "_name": "amp-popup",
+          "_sourceTheme": "lightamp",
+          "_customHTML": "<section class=\"popup-builder\" group=\"Popup\" plugins=\"amp-main, amp-lightbox, amp-youtube, amp-form, amp-mustache, amp-bind\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Triggers / Show Popup</header>\n        <label>On Click</label>\n        <label>Use [popup-id] with any link or button (Link -&gt; Popup tab)</label>\n\n        <input type=\"checkbox\" title=\"On Timer\" name=\"onTimer\" checked>\n        <input type=\"range\" title=\"Delay (s)\" name=\"onTimerDelay\" min=\"0\" max=\"30\" step=\"1\" value=\"4\" condition=\"onTimer == true\">\n\n        <select title=\"Add to Pages:\" name=\"popupOnPages\" multiple condition=\"onTimer == true\"></select>\n\n        <header>Content</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\n        <select title=\"Content Type\" name=\"ampPopupContentType\">\n            <option value=\"1\" selected>None</option>\n            <option value=\"2\">Image</option>\n            <option value=\"3\">Video</option>\n            <option value=\"4\">Form</option>\n        </select>\n\n        <select title=\"Size\" name=\"popupSize\">\n            <option value=\"1\" selected>Small</option>\n            <option value=\"2\">Default</option>\n            <option value=\"3\">Large</option>\n            <option value=\"4\">Extra large</option>\n        </select>\n\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"http://www.youtube.com/watch?v=lBTCB7yLs8Y\" condition=\"ampPopupContentType == 3\">\n\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <input type=\"color\" title=\"Background Color\" name=\"cardBg\" value=\"#ffffff\">\n\n        <header>Overlay</header>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#000000\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"mbr-popup\" data-timer-delay=\"{{onTimer ? onTimerDelay : ''}}\">\n        <div class=\"container amp-modal-dialog\" mbr-class=\"{\n            'modal-sm': popupSize == 1,\n            '': popupSize == 2,\n            'modal-lg': popupSize == 3,\n            'modal-xl': popupSize == 4\n            }\">\n            <div class=\"card-wrapper\">\n                <div class=\"popup-header\" mbr-class=\"{'pb-0': showTitle && showText}\">\n                    <h5 class=\"mbr-fonts-style card-title align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitle\">New Leadership Programs Available</h5>\n                    <div class=\"popup-close\">\n                        <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 32 32\" fill=\"currentColor\">\n                            <path d=\"M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z\"></path>\n                        </svg>\n                    </div>\n                </div>\n                <div class=\"popup-body\">\n                    <div class=\"popup-text\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\"></p>\n                    </div>\n\n                    <div mbr-if=\"ampPopupContentType !== 1\">\n                        <div class=\"card-img\" mbr-if=\"ampPopupContentType == 2\">\n                            <amp-img src=\"@PROJECT_PATH@/assets/images/popup.jpg\" layout=\"responsive\" width=\"468\" height=\"312\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                                <div placeholder class=\"placeholder\"></div>\n                                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/popup.jpg\" alt=\"Mobirise\" title>\n                            </amp-img>\n                        </div>\n\n                        <div class=\"video-block\" mbr-if=\"ampPopupContentType == 3\">\n                            <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\" class=\"mobirise-loader\">\n                                <div placeholder class=\"placeholder\"></div>\n                            </amp-youtube>\n                        </div>\n\n                        <div mbr-form mbr-if=\"ampPopupContentType == 4\" class=\"form-wrapper\">\n                            <form class=\"mbr-form\" action method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n                                <div class=\"submit-message\">\n                                    <div submit-success>\n                                        <template data-form-alert type=\"amp-mustache\">Subscription successful!</template>\n                                    </div>\n                                    <div submit-error>\n                                        <template data-form-alert type=\"amp-mustache\">Failed! {{error}}</template>\n                                    </div>\n                                </div>\n                                <div class=\"mbr-form-row\">\n                                    <div data-for=\"form[data][0][1]\" class=\"mbr-col mbr-col-sm-12 field\" hidden=\"hidden\">\n                                        <input type=\"hidden\" name=\"form[data][0][0]\" value=\"Name\">\n                                        <input type=\"text\" name=\"form[data][0][1]\" data-form-field=\"Name\" placeholder=\"Name\" hidden=\"hidden\">\n                                    </div>\n                                    <div data-for=\"form[data][1][1]\" class=\"mbr-col mbr-col-sm-12 field\" hidden=\"hidden\">\n                                        <input type=\"hidden\" name=\"form[data][1][0]\" value=\"Last Name\">\n                                        <input type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Last Name\" placeholder=\"Last Name\" hidden=\"hidden\">\n                                    </div>\n                                    <div data-for=\"form[data][2][1]\" class=\"mbr-col mbr-col-sm-12 field\">\n                                        <input type=\"hidden\" name=\"form[data][2][0]\" value=\"Email\">\n                                        <input type=\"email\" name=\"form[data][2][1]\" data-form-field=\"Email\" placeholder=\"Email\" required>\n                                    </div>\n                                </div>\n                                <div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a type=\"submit\" class=\"btn btn-form btn-primary\" data-app-placeholder=\"Type Text\">SUBSCRIBE</a></div>\n                            </form>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"popup-footer align-center\" mbr-if=\"showButtons\" mbr-class=\"{'pt-0': ampPopupContentType == 1 || ampPopupContentType == 4}\">\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black-outline\" href=\"page13.html\" data-app-placeholder=\"Type Text\">\n                            LEARN MORE\n                        </a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "sHIyhNKcew",
+          "_anchor": "amp-popup-3w",
+          "_popupId": "mbr-popup-3w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -12652,7 +12875,7 @@
           },
           "_name": "header4",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main,amp-fx-collection\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <!-- <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\"> -->\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/5236.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#0dd1ff\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Parallax\" name=\"parallax\" checked condition=\"bg.type=='image'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-parallax-bg\" amp-fx=\"parallax\" data-parallax-factor=\"1.15\" mbr-if=\"bg.type=='image' && parallax\">\n    </div>    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay\"></div>\n    <div class=\"container\" amp-fx=\"parallax\" data-parallax-factor=\"0.8\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-center  mbr-black l-spacing3\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><br><br>Leadership</h1>\n        \n        <p class=\"mbr-fonts-style mbr-text align-center mbr-black\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">What do leaders do? Who are the leaders in your life who have helped you? <br>Adults aren’t the only leaders. People of all ages can be leaders in so many ways.  When are you, were you,  or could you be a leader?&nbsp;<br></p>\n\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                LEARN MORE\n            </a></div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main,amp-fx-collection\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <!-- <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\"> -->\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/5236.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#0dd1ff\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Parallax\" name=\"parallax\" checked condition=\"bg.type=='image'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-parallax-bg\" amp-fx=\"parallax\" data-parallax-factor=\"1.15\" mbr-if=\"bg.type=='image' && parallax\">\n    </div>    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay\"></div>\n    <div class=\"container\" amp-fx=\"parallax\" data-parallax-factor=\"0.8\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-center  mbr-black l-spacing3\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><br><br>Leadership</h1>\n        \n        <p class=\"mbr-fonts-style mbr-text align-center mbr-black\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">What do leaders do? Who are the leaders in your life who have helped you? <br>Adults aren’t the only leaders. People of all ages can be leaders in so many ways.  When are you, were you,  or could you be a leader?&nbsp;<br></p>\n\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black\" href=\"page13.html#features12-3s\" data-app-placeholder=\"Type Text\">\n                LEARN MORE\n            </a></div>\n    </div>\n</section>",
           "_cid": "sHfJ1rHk6i",
           "_anchor": "header4-3o",
           "_protectedParams": [],
@@ -12725,7 +12948,7 @@
           },
           "_name": "features11",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"features11\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center main-row\">\n            <div class=\"image-block\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/5278.jpg\" layout=\"responsive\" width=\"570.9866885111612\" height=\"348.516\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>               \n                    <a href=\"https://www.freepik.com/vectors/school'>School vector created by pch.vector - www.freepik.com</a>\"><img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/5278.jpg\" alt=\"Mobirise\"></a>\n                </amp-img>\n            </div>\n            <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n                <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold align-center\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    01\n                </h2>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Make your site unique\n                </h3>\n                <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Even if you are not 18 yet, you have the right to give your opinions freely on issues that affect you, and adults should respect your views and take you  seriously.<br><br>You also have the right to freedom of expression; to share what you learn, think and feel. Freedom to find out more and share ideas too, however you choose, by talking, writing or in print,  art, or any other way unless it harms other people.<br><br>There are different opportunities and events around our country that provide opportunities to explore leadership further and assist you putting your ideas into action. Following are just a few of them.&nbsp;<br><br></p>\n                <div mbr-buttons class=\"mbr-section-btn align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn-underline text-secondary\" href=\"https://mobiri.se\">\n                        LEARN MORE\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"features11\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center main-row\">\n            <div class=\"image-block\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/5278.jpg\" layout=\"responsive\" width=\"570.9866885111612\" height=\"348.516\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>               \n                    <a href=\"https://www.freepik.com/vectors/school'>School vector created by pch.vector - www.freepik.com</a>\"><img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/5278.jpg\" alt=\"Mobirise\"></a>\n                </amp-img>\n            </div>\n            <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n                <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold align-center\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    01\n                </h2>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Make your site unique\n                </h3>\n                <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Even if you are not 18 yet, you have the right to give your opinions freely on issues that affect you, and adults should respect your views and take you  seriously.<br><br>You also have the right to freedom of expression; to share what you learn, think and feel. Freedom to find out more and share ideas too, however you choose, by talking, writing or in print,  art, or any other way unless it harms other people.<br><br>There are different opportunities and events around our country that provide opportunities to explore leadership further and assist you putting your ideas into action. Following are just a few of them.&nbsp;<br><br></p>\n                <div mbr-buttons class=\"mbr-section-btn align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn-underline text-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        LEARN MORE\n                    </a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sHfN76fuQC",
           "_anchor": "features11-3p",
           "_protectedParams": [],
@@ -12759,13 +12982,13 @@
           },
           "_name": "info3",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"mbr-section info3\" group=\"Info\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen':fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"!fullScreen\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" condition=\"!fullScreen\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/5811.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#bbe0e2\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\">\n    </div>\n    <div class=\"container align-center\">\n        <h2 class=\"mbr-section-title mbr-fonts-style l-spacing3\" mbr-class=\"{'pb5': showAddress || showPhone}\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Junior Lord Mayor</h2>\n        <p class=\"mbr-text text mbr-fonts-style l-spacing-3 align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".text, .mbr-section-btn\">Junior Lord Mayor of Melbourne Competition <br>August 30th is Melbourne Day and on this day the new Junior Lord Mayor is announced. You can learn more about this on <a href=\"https://www.melbourneday.com.au/\" class=\"text-primary\" target=\"_blank\">https://www.melbourneday.com.au/</a><br><i><br>\"It's such an important program for helping people understand how the city works.\" — Lord Mayor Sally Capp speaking about The Junior Lord Mayor program.</i><br><br>Each year Victorian students in Years 4, 5 or 6 (or aged 9 to 13) are invited to enter the competition  to become the next Junior Lord Mayor.<br><br>Entrants are encouraged to think and write about the big issues in Melbourne, what they love about Melbourne and also what they would aim to do if they became Junior Lord Mayor.<br>While this is a Melbourne event, different suburbs and states have various competitions and events similar to this, including junior councils. You could find out what is happening for young people  in the area   where you live or neighbouring areas. <br>Next year you could enter or participate in this or a programme in your area.<br><br>With Covid restrictions, rather than the announcement and celebration by the Yarra River, this year you can see the finalists go before a judging panel  on Monday, 30 August 2021 — Melbourne Day — for an overall winner, the 2021 Junior Lord Mayor of Melbourne. You could watch the judging and 'swearing in' ceremony LIVE at MelbourneDay.com.au from 10am — and on YouTube.<br></p>\n        <div mbr-buttons class=\"mbr-section-btn\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LEARN MORE</a></div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section info3\" group=\"Info\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen':fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"!fullScreen\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" condition=\"!fullScreen\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/5811.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#bbe0e2\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\">\n    </div>\n    <div class=\"container align-center\">\n        <h2 class=\"mbr-section-title mbr-fonts-style l-spacing3\" mbr-class=\"{'pb5': showAddress || showPhone}\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Junior Lord Mayor</h2>\n        <p class=\"mbr-text text mbr-fonts-style l-spacing-3 align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".text, .mbr-section-btn\">Junior Lord Mayor of Melbourne Competition <br>August 30th is Melbourne Day and on this day the new Junior Lord Mayor is announced. You can learn more about this on <a href=\"https://www.melbourneday.com.au/\" class=\"text-primary\" target=\"_blank\">https://www.melbourneday.com.au/</a><br><i><br>\"It's such an important program for helping people understand how the city works.\" — Lord Mayor Sally Capp speaking about The Junior Lord Mayor program.</i><br><br>Each year Victorian students in Years 4, 5 or 6 (or aged 9 to 13) are invited to enter the competition  to become the next Junior Lord Mayor.<br><br>Entrants are encouraged to think and write about the big issues in Melbourne, what they love about Melbourne and also what they would aim to do if they became Junior Lord Mayor.<br>While this is a Melbourne event, different suburbs and states have various competitions and events similar to this, including junior councils. You could find out what is happening for young people  in the area   where you live or neighbouring areas. <br>Next year you could enter or participate in this or a programme in your area.<br><br>With Covid restrictions, rather than the announcement and celebration by the Yarra River, this year you can see the finalists go before a judging panel  on Monday, 30 August 2021 — Melbourne Day — for an overall winner, the 2021 Junior Lord Mayor of Melbourne. You could watch the judging and 'swearing in' ceremony LIVE at MelbourneDay.com.au from 10am — and on YouTube.<br><br>Best wishes to all interested in applying for these programmes and all those exploring Leadership further from their contexts and perspectives. If you have any queries, please contact karin.morrison@gmail.com<br></p>\n        <div mbr-buttons class=\"mbr-section-btn\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LEARN MORE</a></div>\n    </div>\n</section>",
           "_cid": "sHrYO7pZM4",
+          "_anchor": "info3-3r",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "info3-3r"
+          "_params": {}
         },
         {
           "alias": false,
@@ -12833,7 +13056,7 @@
           },
           "_name": "features12",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"features12\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"1\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6efe9\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"mbr-row main-row\">\n        <div class=\"image-block \">\n            <amp-img src=\"@PROJECT_PATH@/assets/images/df121c3b-80c3-29e3-e626-6f7ff1309281.png\" layout=\"responsive\" width=\"685.9966666666667\" height=\"970.75\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/df121c3b-80c3-29e3-e626-6f7ff1309281.png\" alt=\"Mobirise\">\n            </amp-img>\n        </div>\n        <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold align-left\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                03\n            </h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">&nbsp;Emerging Leaders       Menzies Foundation</h3>\n            <p class=\"mbr-fonts-style mbr-text align-left\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Menzies Foundation is delighted to announce the launch of the Menzies Emerging Leaders Fellowship.<br>In partnership with the Ethics Centre, and now AIME Mentoring and IMAGI-NATION University, this initiative will support Australians and a global community of young people to deeply engage with ethical challenges and build leadership capability.<br>In essence, the program is open to all Australian applicants and together with its valued partners,  the Menzies Foundation aims to connect with students in their final years at school to understand their perspectives on the world’s leadership challenges and work to support  and to address these challenges.                                                                                                              <br>The first leadership challenge is ‘Inequity’. <br><br> To access the Application platform, you can go directly to the link:                                                    <a href=\"https://mailchi.mp/130c44aa9031/menzies-emerging-leaders-program-final-4889370\" class=\"text-primary\">an updated communication regarding the application extension</a> <br>Best wishes to all interested in applying for these programmes  and all those exploring Leadership further from their contexts and perspectives. If you have any queries, please contact karin.morrison@gmail.com<br></p>\n            <div mbr-buttons class=\"mbr-section-btn align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn-underline text-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                    LEARN MORE\n                </a></div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"features12\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"1\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6efe9\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"mbr-row main-row\">\n        <div class=\"image-block \">\n            <amp-img src=\"@PROJECT_PATH@/assets/images/df121c3b-80c3-29e3-e626-6f7ff1309281.png\" layout=\"responsive\" width=\"685.9966666666667\" height=\"970.75\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/df121c3b-80c3-29e3-e626-6f7ff1309281.png\" alt=\"Mobirise\">\n            </amp-img>\n        </div>\n        <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold align-left\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                03\n            </h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">&nbsp;Emerging Leaders       Menzies Foundation</h3>\n            <p class=\"mbr-fonts-style mbr-text align-left\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Menzies Foundation is delighted to announce the launch of the Menzies Emerging Leaders Fellowship.<br>In partnership with the Ethics Centre, and now AIME Mentoring and IMAGI-NATION University, this initiative will support Australians and a global community of young people to deeply engage with ethical challenges and build leadership capability.<br>In essence, the program is open to all Australian applicants and together with its valued partners,  the Menzies Foundation aims to connect with students in their final years at school to understand their perspectives on the world’s leadership challenges and work to support  and to address these challenges.                                                                                                              <br>The first leadership challenge is ‘Inequity’. <br><br> To access the Application platform, you can go directly to the link:                                                    <a href=\"https://mailchi.mp/130c44aa9031/menzies-emerging-leaders-program-final-4889370\" class=\"text-primary\">an updated communication regarding the application extension</a> <br></p>\n            <div mbr-buttons class=\"mbr-section-btn align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn-underline text-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                    LEARN MORE\n                </a></div>\n        </div>\n    </div>\n</section>",
           "_cid": "sHs31wj9g8",
           "_anchor": "features12-3s",
           "_protectedParams": [],
@@ -12859,11 +13082,11 @@
           "_sourceTheme": "lightamp",
           "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\"></h3>\n                <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>Watch the judging livestream here and on YouTube and join the excitement. Check back for details.  <br>Her or His Worship holds the ceremonial title for a year – getting to rock mayoral robes and gold chains, march with competition finalists in the Moomba Parade, perform official and fun duties with Lord Mayor Sally Capp and more!<br>Now in its ninth year, the Melbourne Day Committee-run competition aims to raise awareness about Melbourne and our city's incredible Aboriginal history and culture – and instil civic pride by highlighting our journey since being founded on 30 August 1835.<br>What are the big issues?<br>On entrants' minds are environmental issues, city safety and the homeless, says Melbourne Day chairman Campbell Walker.<br>\"Many called for mental health support for those struggling with Covid lockdowns,\" Campbell says.<br>\"Others called for greater inclusivity and diversity, programs to boost Melbournians' physical fitness and more city-based family entertainment.<br>\"Several wanted more Melbourne and Aboriginal history to be taught in schools, which brought delight to Melbourne Day Committee's office,\" he says.<br>What do they love about Melbourne?<br>Melbourne Day deputy chair Sue Stanley says entrants love the city's street vibe, community spirit, architecture, resilience and positivity in the face of Covid.<br>\"They praised the variety of sport, theatre and arts offerings,\" Sue says.<br>\"The Grade four, five and sixers (aged 9 to 13) clearly march on their stomachs, raving about the city's food culture,\" she says.<br>\"And they wouldn't be true Melbournians without mentioning the weather, with one loving our city's 'five seasons in one day'.\"<br>Each finalist wins a prize pack, a framed certificate/trophy and other goodies.<br>Thank you to everyone who entered, and teachers and parents.<br><a href=\"https://www.melbourneday.com.au/newsletters.html\" class=\"text-primary\">Missed out? Subscribe and be reminded next year.</a><br>\"<i>It's such an important program for helping people understand how the city works.\"</i> — Lord Mayor Sally Capp<br><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sHs44C7W6b",
+          "_anchor": "content2-3t",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content2-3t"
+          "_params": {}
         },
         {
           "alias": false,
@@ -12898,11 +13121,11 @@
           "_sourceTheme": "lightamp",
           "_customHTML": "<section class=\"mbr-section content1\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-title\"><div><i><br></i></div><div><i><br></i></div><div><i>\"Children have the right to share freely with others what they learn, think and feel, by talking, drawing, writing or in any other way unless it harms other people.\"</i></div></h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle,.mbr-section-btn\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\">Shape your future web project with sharp design and refine coded functions.\n        </h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n            <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n        </div>\n    </div>\n</section>",
           "_cid": "sHs4vDZUrt",
+          "_anchor": "content1-3u",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content1-3u"
+          "_params": {}
         },
         {
           "alias": false,
