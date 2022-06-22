@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "JKAA",
-    "currentPage": "page22.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "lightamp",
       "title": "LightAMP",
@@ -48,7 +48,7 @@
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 194,
+    "uniqCompNum": 192,
     "versionPublish": "5.6.3",
     "imageResize": false,
     "screenshot": "screenshot.png",
@@ -877,7 +877,7 @@
           },
           "_name": "amp-popup",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"popup-builder\" group=\"Popup\" plugins=\"amp-main, amp-lightbox, amp-youtube, amp-form, amp-mustache, amp-bind\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Triggers / Show Popup</header>\n        <label>On Click</label>\n        <label>Use [popup-id] with any link or button (Link -&gt; Popup tab)</label>\n\n        <input type=\"checkbox\" title=\"On Timer\" name=\"onTimer\" checked>\n        <input type=\"range\" title=\"Delay (s)\" name=\"onTimerDelay\" min=\"0\" max=\"30\" step=\"1\" value=\"2\" condition=\"onTimer == true\">\n\n        <select title=\"Add to Pages:\" name=\"popupOnPages\" multiple condition=\"onTimer == true\"></select>\n\n        <header>Content</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n\n        <select title=\"Content Type\" name=\"ampPopupContentType\">\n            <option value=\"1\">None</option>\n            <option value=\"2\" selected>Image</option>\n            <option value=\"3\">Video</option>\n            <option value=\"4\">Form</option>\n        </select>\n\n        <select title=\"Size\" name=\"popupSize\">\n            <option value=\"1\">Small</option>\n            <option value=\"2\" selected>Default</option>\n            <option value=\"3\">Large</option>\n            <option value=\"4\">Extra large</option>\n            <option value=\"5\">Full Screen</option>\n        </select>\n\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"http://www.youtube.com/watch?v=lBTCB7yLs8Y\" condition=\"ampPopupContentType == 3\">\n\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <input type=\"color\" title=\"Background Color\" name=\"cardBg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Close Button\" name=\"closeButton\" value=\"#353535\">\n\n        <header>Overlay</header>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#000000\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"modal mbr-popup\" data-timer-delay=\"{{onTimer ? onTimerDelay : ''}}\">\n        <div class=\"amp-modal-dialog\" mbr-class=\"{\n            'modal-sm': popupSize == 1,\n            '': popupSize == 2,\n            'modal-lg': popupSize == 3,\n            'modal-xl': popupSize == 4\n            }\">\n            <div class=\"card-wrapper position-relative\">\n                <div class=\"container position-static\">\n                    <div class=\"popup-header\" mbr-class=\"{'pb-0': showTitle && showText}\">\n                        <h5 class=\"mbr-fonts-style card-title align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitle\">CRIA MARKETPLACE</h5>\n                        <div class=\"popup-close\">\n                            <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"23\" height=\"23\" viewBox=\"0 0 32 32\" fill=\"currentColor\">\n                                <path d=\"M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z\">\n                                </path>\n                            </svg>\n                        </div>\n                    </div>\n                    <div class=\"popup-body\">\n                        <div class=\"popup-text\" mbr-if=\"showText\">\n                            <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\">You can register here&gt;</p>\n                        </div>\n\n                        <div mbr-if=\"ampPopupContentType !== 1\">\n                            <div class=\"card-img\" mbr-if=\"ampPopupContentType == 2\">\n                                <amp-img src=\"@PROJECT_PATH@/assets/images/screen-shot-2022-06-22-at-9.02.22-pm.png\" layout=\"responsive\" width=\"437.99056213872836\" height=\"604.969\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                                    <div placeholder class=\"placeholder\"></div>\n                                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screen-shot-2022-06-22-at-9.02.22-pm.png\" alt=\"Mobirise\" title data-aspectratio=\"0.5625\">\n                                </amp-img>\n                            </div>\n\n                            <div class=\"video-block\" mbr-if=\"ampPopupContentType == 3\">\n                                <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\" class=\"mobirise-loader\">\n                                    <div placeholder class=\"placeholder\"></div>\n                                </amp-youtube>\n                            </div>\n\n                            <div mbr-form mbr-if=\"ampPopupContentType == 4\" class=\"form-wrapper\">\n                                <form class=\"mbr-form\" action method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n                                    <div class=\"submit-message\">\n                                        <div submit-success>\n                                            <template data-form-alert type=\"amp-mustache\">Subscription\n                                                successful!</template>\n                                        </div>\n                                        <div submit-error>\n                                            <template data-form-alert type=\"amp-mustache\">Failed! {{error}}</template>\n                                        </div>\n                                    </div>\n                                    <div class=\"mbr-form-row\">\n                                        <div data-for=\"form[data][0][1]\" class=\"mbr-col mbr-col-sm-12 field\" hidden=\"hidden\">\n                                            <input type=\"hidden\" name=\"form[data][0][0]\" value=\"Name\">\n                                            <input type=\"text\" name=\"form[data][0][1]\" data-form-field=\"Name\" placeholder=\"Name\" hidden=\"hidden\">\n                                        </div>\n                                        <div data-for=\"form[data][1][1]\" class=\"mbr-col mbr-col-sm-12 field\" hidden=\"hidden\">\n                                            <input type=\"hidden\" name=\"form[data][1][0]\" value=\"Last Name\">\n                                            <input type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Last Name\" placeholder=\"Last Name\" hidden=\"hidden\">\n                                        </div>\n                                        <div data-for=\"form[data][2][1]\" class=\"mbr-col mbr-col-sm-12 field\">\n                                            <input type=\"hidden\" name=\"form[data][2][0]\" value=\"Email\">\n                                            <input type=\"email\" name=\"form[data][2][1]\" data-form-field=\"Email\" placeholder=\"Email\" required>\n                                        </div>\n                                    </div>\n                                    <div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a type=\"submit\" class=\"btn btn-form btn-primary\" data-app-placeholder=\"Type Text\">SUBSCRIBE</a></div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"popup-footer align-center\" mbr-if=\"showButtons\" mbr-class=\"{'pt-0': ampPopupContentType == 1 || ampPopupContentType == 4}\">\n                        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black-outline\" href=\"page22.html\" data-app-placeholder=\"Type Text\">\n                                LEARN MORE\n                            </a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_customHTML": "<section class=\"popup-builder\" group=\"Popup\" plugins=\"amp-main, amp-lightbox, amp-youtube, amp-form, amp-mustache, amp-bind\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Triggers / Show Popup</header>\n        <label>On Click</label>\n        <label>Use [popup-id] with any link or button (Link -&gt; Popup tab)</label>\n\n        <input type=\"checkbox\" title=\"On Timer\" name=\"onTimer\" checked>\n        <input type=\"range\" title=\"Delay (s)\" name=\"onTimerDelay\" min=\"0\" max=\"30\" step=\"1\" value=\"2\" condition=\"onTimer == true\">\n\n        <select title=\"Add to Pages:\" name=\"popupOnPages\" multiple condition=\"onTimer == true\"></select>\n\n        <header>Content</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n\n        <select title=\"Content Type\" name=\"ampPopupContentType\">\n            <option value=\"1\" selected>None</option>\n            <option value=\"2\">Image</option>\n            <option value=\"3\">Video</option>\n            <option value=\"4\">Form</option>\n        </select>\n\n        <select title=\"Size\" name=\"popupSize\">\n            <option value=\"1\">Small</option>\n            <option value=\"2\" selected>Default</option>\n            <option value=\"3\">Large</option>\n            <option value=\"4\">Extra large</option>\n            <option value=\"5\">Full Screen</option>\n        </select>\n\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"http://www.youtube.com/watch?v=lBTCB7yLs8Y\" condition=\"ampPopupContentType == 3\">\n\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <input type=\"color\" title=\"Background Color\" name=\"cardBg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Close Button\" name=\"closeButton\" value=\"#353535\">\n\n        <header>Overlay</header>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#000000\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"modal mbr-popup\" data-timer-delay=\"{{onTimer ? onTimerDelay : ''}}\">\n        <div class=\"amp-modal-dialog\" mbr-class=\"{\n            'modal-sm': popupSize == 1,\n            '': popupSize == 2,\n            'modal-lg': popupSize == 3,\n            'modal-xl': popupSize == 4\n            }\">\n            <div class=\"card-wrapper position-relative\">\n                <div class=\"container position-static\">\n                    <div class=\"popup-header\" mbr-class=\"{'pb-0': showTitle && showText}\">\n                        <h5 class=\"mbr-fonts-style card-title align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitle\">CRIA MARKETPLACE</h5>\n                        <div class=\"popup-close\">\n                            <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"23\" height=\"23\" viewBox=\"0 0 32 32\" fill=\"currentColor\">\n                                <path d=\"M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z\">\n                                </path>\n                            </svg>\n                        </div>\n                    </div>\n                    <div class=\"popup-body\">\n                        <div class=\"popup-text\" mbr-if=\"showText\">\n                            <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\"><br>Speakers for the  first CRIA MARKETPLACE  are Jonathan Levy  and Maheen Yawari. There is no charge for this session and people of all ages from around the world will be registering for this session.  Jonathan Levy is committed to the work of Janusz Korczak and has done so much to heighten awareness of the important work of Janusz Korczak and put  it into action in so many ways with young active participants having agency and their voices heard loud and clear!  What an honour that Maheen, a young person I met in an Australian government primary school when she was in Grade 5 and already so interested in Children's Rights, was invited to be a speaker with Jonathan for this MARKETPLACE.  Maheen has been a very active participant in the Janusz Korczak Australia Association since its first days.<br><br>Through the Janusz Korczak Association Australia (JKAA) and CRIA, your voice and ideas can be seen and/or heard, valued and respected  when you participate in the Activities on this website and in person activities that will begin soon in Australia, now that COVID restrictions have eased. Information about international events and activities will also be on our website.<br><br>Thank you very much to those who responded to the Survey developed by our National Children's Commissioner about the impact of COVID on your lives. I appreciate that we had permission to place information about that survey with the link for the survey on our website.  Thank you also to those who have submitted responses to other Activities. Please know we always welcome your ideas and perspectives in your submissions. <br><br>You can register for CRIA MARKETPLACE&nbsp;</p>\n                        </div>\n\n                        <div mbr-if=\"ampPopupContentType !== 1\">\n                            <div class=\"card-img\" mbr-if=\"ampPopupContentType == 2\">\n                                <amp-img src=\"@ADDONS_PATH@/popup-builder/_images/popup.jpg\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                                    <div placeholder class=\"placeholder\"></div>\n                                    <img class=\"mbr-temp\" src=\"@ADDONS_PATH@/popup-builder/_images/popup.jpg\" alt=\"Mobirise\" title>\n                                </amp-img>\n                            </div>\n\n                            <div class=\"video-block\" mbr-if=\"ampPopupContentType == 3\">\n                                <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\" class=\"mobirise-loader\">\n                                    <div placeholder class=\"placeholder\"></div>\n                                </amp-youtube>\n                            </div>\n\n                            <div mbr-form mbr-if=\"ampPopupContentType == 4\" class=\"form-wrapper\">\n                                <form class=\"mbr-form\" action method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n                                    <div class=\"submit-message\">\n                                        <div submit-success>\n                                            <template data-form-alert type=\"amp-mustache\">Subscription\n                                                successful!</template>\n                                        </div>\n                                        <div submit-error>\n                                            <template data-form-alert type=\"amp-mustache\">Failed! {{error}}</template>\n                                        </div>\n                                    </div>\n                                    <div class=\"mbr-form-row\">\n                                        <div data-for=\"form[data][0][1]\" class=\"mbr-col mbr-col-sm-12 field\" hidden=\"hidden\">\n                                            <input type=\"hidden\" name=\"form[data][0][0]\" value=\"Name\">\n                                            <input type=\"text\" name=\"form[data][0][1]\" data-form-field=\"Name\" placeholder=\"Name\" hidden=\"hidden\">\n                                        </div>\n                                        <div data-for=\"form[data][1][1]\" class=\"mbr-col mbr-col-sm-12 field\" hidden=\"hidden\">\n                                            <input type=\"hidden\" name=\"form[data][1][0]\" value=\"Last Name\">\n                                            <input type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Last Name\" placeholder=\"Last Name\" hidden=\"hidden\">\n                                        </div>\n                                        <div data-for=\"form[data][2][1]\" class=\"mbr-col mbr-col-sm-12 field\">\n                                            <input type=\"hidden\" name=\"form[data][2][0]\" value=\"Email\">\n                                            <input type=\"email\" name=\"form[data][2][1]\" data-form-field=\"Email\" placeholder=\"Email\" required>\n                                        </div>\n                                    </div>\n                                    <div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a type=\"submit\" class=\"btn btn-form btn-primary\" data-app-placeholder=\"Type Text\">SUBSCRIBE</a></div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"popup-footer align-center\" mbr-if=\"showButtons\" mbr-class=\"{'pt-0': ampPopupContentType == 1 || ampPopupContentType == 4}\">\n                        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black-outline\" href=\"page22.html\" data-app-placeholder=\"Type Text\">\n                                LEARN MORE\n                            </a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_cid": "t9i1HIA4yI",
           "_anchor": "amp-popup-5a",
           "_popupId": "mbr-popup-5a",
@@ -19539,171 +19539,13 @@
           },
           "_name": "content2",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light\" mbr-if=\"showTitle\" mbr-theme-style=\"display-6\" data-app-selector=\".mbr-section-title\"><b>\n                    CRIA MARKETPLACE</b></h3>\n                <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>Hey, all wonderful activists and advocates for child rights,<br> <br>                                                                       CRIA MARKET PLACE is here!<br>                             We have a series of workshops lined up, of course mostly hosted by many of you!&nbsp;<br><br>Register <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSejiWFVNkURK7Ff0WM4alNKLaEnw6zF9hSp2efecHMYXFG2kg/viewform\" class=\"text-warning\">HERE</a><br>CRIA Marketplace sessions are authentically:<br>Speakers for the  first CRIA MARKETPLACE  are Jonathan Levy  and Maheen Yawari. There is no charge for this session and people of all ages from around the world will be registering for this session.  Jonathan Levy is committed to the work of Janusz Korczak and has done so much to heighten awareness of the important work of Janusz Korczak and put  it into action in so many ways with young active participants having agency and their voices heard loud and clear!  What an honour that Maheen, a young person I met in an Australian government primary school when she was in Grade 5 and already so interested in Children's Rights, was invited to be a speaker with Jonathan for this MARKETPLACE.  Maheen has been a very active participant in the Janusz Korczak Australia Association since its first days.<br><br>Through the Janusz Korczak Association Australia (JKAA) and CRIA, your voice and ideas can be seen and/or heard, valued and respected  when you participate in the Activities on this website and in person activities that will begin soon in Australia, now that COVID restrictions have eased. Information about international events and activities will also be on our website.<br><br>Thank you very much to those who responded to the Survey developed by our National Children's Commissioner about the impact of COVID on your lives. I appreciate that we had permission to place information about that survey with the link for the survey on our website.  Thank you also to those who have submitted responses to other Activities. Please know we always welcome your ideas and perspectives in your submissions.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light\" mbr-if=\"showTitle\" mbr-theme-style=\"display-6\" data-app-selector=\".mbr-section-title\">\n                    CRIA MARKETPLACE</h3>\n                <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>Speakers for the  first CRIA MARKETPLACE  are Jonathan Levy  and Maheen Yawari. There is no charge for this session and people of all ages from around the world will be registering for this session.  Jonathan Levy is committed to the work of Janusz Korczak and has done so much to heighten awareness of the important work of Janusz Korczak and put  it into action in so many ways with young active participants having agency and their voices heard loud and clear!  What an honour that Maheen, a young person I met in an Australian government primary school when she was in Grade 5 and already so interested in Children's Rights, was invited to be a speaker with Jonathan for this MARKETPLACE.  Maheen has been a very active participant in the Janusz Korczak Australia Association since its first days.<br><br>Through the Janusz Korczak Association Australia (JKAA) and CRIA, your voice and ideas can be seen and/or heard, valued and respected  when you participate in the Activities on this website and in person activities that will begin soon in Australia, now that COVID restrictions have eased. Information about international events and activities will also be on our website.<br><br>Thank you very much to those who responded to the Survey developed by our National Children's Commissioner about the impact of COVID on your lives. I appreciate that we had permission to place information about that survey with the link for the survey on our website.  Thank you also to those who have submitted responses to other Activities. Please know we always welcome your ideas and perspectives in your submissions.<br><br>You can register &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; <a href=\"https://784i2.r.a.d.sendibm1.com/mk/cl/f/qWq0JksHSqnNK58dKdEnvOhWXOIw-Xgb11hfl-kApr2wK8Fwj_t69p-Iya7UFK46gco3auu18vNBIJMA6jmrWzMDdvYC_DMHNNyLiqoHRPF5DrskS_dKSATkxgTyuJNbD4EA5QTtSJwFH3Ju7eoyOyYQgaeUyOMwxRF5REfjNU_X9avW5U23n8cqJD90ZjjFn6sHHrIgE8e0\" class=\"text-primary\" target=\"_blank\">here</a></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "t9i4EbvHdp",
-          "_anchor": "content2-5b",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            ".main-row": {
-              "& when (@reverseContent)": {
-                "-webkit-flex-direction": "row-reverse",
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".second-row": {
-              "padding-top": "2rem"
-            },
-            ".group-title": {
-              "color": "#232323",
-              "margin": "0",
-              "padding": "0 0 1rem 0",
-              "text-align": "left"
-            },
-            ".text": {
-              "margin": "0",
-              "padding": "0",
-              "text-align": "left"
-            },
-            ".items": {
-              "padding-right": "30px"
-            },
-            ".map-placeholder": {
-              "display": "none",
-              "h4": {
-                "padding-top": "5rem",
-                "color": "#232323",
-                "text-align": "center"
-              }
-            },
-            ".list-item": {
-              "display": "flex",
-              "padding": "10px 0",
-              "border-bottom": "1px dotted rgba(255, 255, 255, 0.2)",
-              "text-align": "left",
-              "& > .icon-wrap": {
-                "display": "flex",
-                "margin": "auto",
-                "margin-right": "1rem",
-                "width": "~\"@{iconsSize}rem\"",
-                "height": "~\"@{iconsSize}rem\""
-              },
-              ".mbr-iconfont": {
-                "padding-right": "1rem",
-                "color": "@iconsColor",
-                "margin": "auto",
-                "font-size": "~\"@{iconsSize}rem\""
-              },
-              "h5": {
-                "margin": "0",
-                "width": "100%"
-              }
-            },
-            ".google-map": {
-              "height": "325px",
-              "position": "relative",
-              "width": "100%",
-              "iframe": {
-                "height": "100%",
-                "width": "100%"
-              },
-              "[data-state-details]": {
-                "color": "#ffffff",
-                "height": "1.5em",
-                "margin-top": "-0.75em",
-                "padding-left": "1.25rem",
-                "padding-right": "1.25rem",
-                "position": "absolute",
-                "text-align": "center",
-                "top": "50%",
-                "width": "100%"
-              },
-              "&[data-state]": {
-                "background": "#e9e5dc"
-              },
-              "&[data-state=\"loading\"]": {
-                "[data-state-details]": {
-                  "display": "none"
-                }
-              }
-            },
-            ".icons-list > .icon-wrap": {
-              "display": "inline-block",
-              "width": "~\"@{socialSize}rem\"",
-              "height": "~\"@{socialSize}rem\""
-            },
-            ".amp-iconfont-social": {
-              "color": "@socialColor",
-              "font-size": "~\"@{socialSize}rem\"",
-              "&:hover": {
-                "opacity": "0.7"
-              }
-            },
-            ".icons-list": {
-              "a:not(:last-child)": {
-                "margin-right": "1rem"
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".main-row": {
-                "& when (@reverseContent)": {
-                  "-webkit-flex-direction": "column-reverse",
-                  "flex-direction": "column-reverse",
-                  "-webkit-flex-wrap": "nowrap",
-                  "flex-wrap": "nowrap"
-                }
-              },
-              "& when not (@reverseContent)": {
-                ".map-wrap": {
-                  "padding-bottom": "2rem"
-                }
-              },
-              "& when (@reverseContent)": {
-                ".map-wrap": {
-                  "padding-top": "2rem"
-                }
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".first-row, .second-row": {
-                "-webkit-justify-content": "flex-start",
-                "justify-content": "flex-start",
-                "& > div:not(:last-child)": {
-                  "padding-bottom": "2rem"
-                }
-              },
-              ".second-row": {
-                "padding-top": "0"
-              }
-            }
-          },
-          "_name": "footer6",
-          "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"footer6 map\" group=\"Footers\" plugins=\"amp-main, amp-iframe\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"range\" inline=\"\" name=\"listItems\" title=\"List Items\" min=\"0\" max=\"6\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Marks\" name=\"showIcons\" checked=\"\" condition=\"listItems > 0\">\n        <input type=\"range\" inline=\"\" title=\"Marks Size\" name=\"iconsSize\" min=\"0.2\" max=\"2\" step=\"0.1\" value=\"0.5\" condition=\"showIcons &amp;&amp; listItems > 0\">\n        <input type=\"color\" title=\"Marks Color\" name=\"iconsColor\" value=\"#232323\" condition=\"showIcons &amp;&amp; listItems > 0\">\n        <input type=\"range\" inline=\"\" title=\"Icons Count\" name=\"socialCount\" min=\"0\" max=\"6\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Icons Color\" name=\"socialColor\" value=\"#464646\" condition=\"socialCount > 0\">\n        <input type=\"range\" inline=\"\" title=\"Icons Size\" name=\"socialSize\" min=\"1\" max=\"3\" step=\"0.1\" value=\"2\" condition=\"socialCount > 0\">\n        <input type=\"checkbox\" title=\"Map on Left/Right\" name=\"reverseContent\" checked=\"\">\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ececec\" selected=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"Australia\n\" value=\"Australia\n\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center main-row\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 map-wrap\">\n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n                <div class=\"map-placeholder mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                </div>\n            </div>\n\n            <div class=\"mbr-col-md-12 mbr-col-lg-6\">\n                <div class=\"mbr-row first-row mbr-justify-content-center\">\n                    <div class=\"mbr-col-md-6\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                            JKAA</h3>\n                        <p class=\"mbr-text text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text\">Janusz Korczak Association<br>Australia</p>\n                    </div>\n                    <div class=\"mbr-col-md-6\" mbr-if=\"listItems > 0\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                            Links\n                        </h3>\n                        <div class=\"items\" mbr-list=\"\" mbr-list-grow=\"listItems\">\n                            <div class=\"list-item\">\n                                <div class=\"icon-wrap\">\n                                    <span mbr-icon=\"\" class=\"mbr-iconfont fa-stop fa\" mbr-if=\"showIcons\"></span>\n                                </div>\n                                <h5 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item\">\n                                    Website builder\n                                </h5>\n                            </div>\n                            \n                            \n                        </div>\n                    </div>\n                </div>\n                <div class=\"mbr-row second-row mbr-justify-content-center\">\n                    <div class=\"mbr-col-md-6\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\"></h3>\n                        <p class=\"mbr-text text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text\"></p>\n                    </div>\n                    <div class=\"mbr-col-md-6\" mbr-if=\"socialCount > 0\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle &amp;&amp; socialCount > 0\" data-app-selector=\".group-title, .icons-list\">\n                            Follow Us\n                        </h3>\n                        <div class=\"icons-list\" mbr-list=\"\" mbr-list-grow=\"socialCount\">\n                            <a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\" class=\"icon-wrap\">\n                                <span mbr-icon=\"\" class=\"amp-iconfont amp-iconfont-social fa-youtube fa\"></span>\n                            </a>\n                            \n                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "footer6-5d",
-          "_isUserblock": true,
-          "_cid": "t9u2sjDAg4",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "content2-5b"
         }
       ]
     }
