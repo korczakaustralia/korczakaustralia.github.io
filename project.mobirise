@@ -60,8 +60,6 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@",
     "mbrsiteDomain": "kryxdpxum3"
   },
   "pages": {
