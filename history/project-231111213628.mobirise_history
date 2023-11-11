@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "JKAA",
-    "currentPage": "index.html",
+    "currentPage": "page28.html",
     "theme": {
       "name": "lightamp",
       "title": "LightAMP",
@@ -49,7 +49,7 @@
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 230,
+    "uniqCompNum": 228,
     "versionPublish": "5.2.0",
     "imageResize": false,
     "screenshot": "screenshot.png",
@@ -1020,7 +1020,7 @@
           },
           "_name": "features10",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"features10 mbr-section\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected=\"\">3</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ececec\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'first-row-card': cardsAmount > 2,\n                             'last-child': cardsAmount == 1}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-11-at-9.49.03-pm.png\" layout=\"responsive\" width=\"350.606071942446\" class=\"mobirise-loader\" height=\"277.688\" alt=\"Mobirise\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-11-at-9.49.03-pm.png\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Perfomance \n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-7\">\n                            <a class=\"btn-underline text-danger\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'first-row-card': cardsAmount > 2,\n                             'last-child': cardsAmount == 2}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-11-at-9.49.42-pm.png\" layout=\"responsive\" height=\"277.688\" class=\"mobirise-loader\" width=\"350.606071942446\" alt=\"Mobirise\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-11-at-9.49.42-pm.png\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Engagements\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-7\">\n                            <a class=\"btn-underline text-danger\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-04-at-10.00.43-pm.png\" layout=\"responsive\" class=\"mobirise-loader\" height=\"469.859\" width=\"350.61448106060607\" alt=\"Mobirise\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-04-at-10.00.43-pm.png\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Flexibility\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-7\">\n                            <a class=\"btn-underline text-danger\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>            \n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"features10 mbr-section\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected=\"\">3</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ececec\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'first-row-card': cardsAmount > 2,\n                             'last-child': cardsAmount == 1}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/img-9602.jpg\" layout=\"responsive\" width=\"350.625\" class=\"mobirise-loader\" height=\"467.5\" alt=\"Mobirise\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9602.jpg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Perfomance \n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-7\">\n                            <a class=\"btn-underline text-danger\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'first-row-card': cardsAmount > 2,\n                             'last-child': cardsAmount == 2}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/img-9603.jpg\" layout=\"responsive\" height=\"467.5\" class=\"mobirise-loader\" width=\"350.625\" alt=\"Mobirise\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-9603.jpg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Engagements\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-7\">\n                            <a class=\"btn-underline text-danger\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-04-at-10.00.43-pm.png\" layout=\"responsive\" class=\"mobirise-loader\" height=\"469.859\" width=\"350.61448106060607\" alt=\"Mobirise\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/screenshot-2023-11-04-at-10.00.43-pm.png\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Flexibility\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-7\">\n                            <a class=\"btn-underline text-danger\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>            \n        </div>\n    </div>\n</section>",
           "_cid": "tT7Wwet2wv",
           "_anchor": "features10-64",
           "_protectedParams": [],
@@ -24464,300 +24464,9 @@
           },
           "_name": "header3",
           "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <select title=\"Vertical Align\" name=\"verticalAlign\">\n            <option value=\"flex-start\">Top</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\" selected>Bottom</option>\n        </select>\n        <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n            <option value=\"flex-start\" selected>Left</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\">Right</option>\n        </select>\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"30\">\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/image-8.png\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#c6e2ba\">\n        </fieldset>\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#464646\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">    \n        <div class=\"mbr-row\">\n            <div class=\"content-wrap\">\n                <h1 class=\"mbr-section-title mbr-fonts-style align-left mbr-bold mbr-white l-spacing3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    Children's Rights</h1>\n                \n                <p class=\"mbr-fonts-style mbr-text align-left mbr-white\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Convention on the Rights of the Child  is an international Human rights agreement (also known as a human rights treaty) that outlines the specific rights that children and young people can claim. By signing up to this Convention, national governments commit to <br>protecting these rights in their countries.<br>Australia has signed up, or ratified this Convention and this means that Australia has a duty to make sure that all children/young people enjoy the rights in this treaty. <br><br>Here you can see the United Nations Convention on the Rights of the Child  and ways different countries show these rights to young people in their countries in ways they think young people will understand best.<br></p>\n                \n                <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn-underline text-white\" href=\"https://mobiri.se\">\n                        LEARN MORE\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <select title=\"Vertical Align\" name=\"verticalAlign\">\n            <option value=\"flex-start\">Top</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\" selected>Bottom</option>\n        </select>\n        <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n            <option value=\"flex-start\" selected>Left</option>\n            <option value=\"center\">Center</option>\n            <option value=\"flex-end\">Right</option>\n        </select>\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"30\">\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background6.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#c6e2ba\">\n        </fieldset>\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fce1ce\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">    \n        <div class=\"mbr-row\">\n            <div class=\"content-wrap\">\n                <h1 class=\"mbr-section-title mbr-fonts-style align-left mbr-bold mbr-white l-spacing3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    Children's Rights</h1>\n                \n                <p class=\"mbr-fonts-style mbr-text align-left mbr-white\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Convention on the Rights of the Child  is an international Human rights agreement (also known as a human rights treaty) that outlines the specific rights that children and young people can claim. By signing up to this Convention, national governments commit to <br>protecting these rights in their countries.<br>Australia has signed up, or ratified this Convention and this means that Australia has a duty to make sure that all children/young people enjoy the rights in this treaty. <br><br>Here you can see the United Nations Convention on the Rights of the Child  and ways different countries show these rights to young people in their countries in ways they think young people will understand best.<br></p>\n                \n                <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn-underline text-white\" href=\"https://mobiri.se\">\n                        LEARN MORE\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tTo7GRhoQA",
           "_anchor": "header3-67",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            ".mbr-row": {
-              "-webkit-justify-content": "flex-end",
-              "justify-content": "flex-end",
-              "position": "relative"
-            },
-            ".text-wrap": {
-              "width": "100%"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#7f7e7e"
-            },
-            ".img-block": {
-              "display": "flex",
-              "-webkit-justify-content": "center",
-              "justify-content": "center",
-              "-webkit-flex-wrap": "wrap",
-              "flex-wrap": "wrap",
-              "-webkit-align-items": "center",
-              "align-items": "center",
-              "width": "100%"
-            },
-            "amp-img": {
-              "width": "50%",
-              "transition": "all .5s",
-              "& when (@imagesAmount = '1')": {
-                "&:first-child": {
-                  "width": "100%"
-                }
-              },
-              "& when (@imagesAmount = '3')": {
-                "&:nth-child(3)": {
-                  "width": "100%"
-                }
-              },
-              "& when (@imagesAmount = '5')": {
-                "&:nth-child(5)": {
-                  "width": "100%"
-                }
-              },
-              "&:hover": {
-                "opacity": ".3",
-                "transition": "all .5s",
-                "cursor": "pointer"
-              }
-            },
-            ".mbr-text": {
-              "color": "#767676"
-            },
-            ".amp-image-lightbox-caption": {
-              "text-align": "center"
-            },
-            ".text-block": {
-              "display": "flex",
-              "-webkit-align-items": "center",
-              "align-items": "center",
-              "padding": "2rem",
-              "-webkit-flex-basis": "auto",
-              "flex-basis": "auto"
-            },
-            ".mbr-section-btn": {
-              "padding-top": "1rem"
-            },
-            "@media (min-width: 992px)": {
-              ".img-block": {
-                "width": "50%"
-              },
-              ".text-block": {
-                "padding": "0 2rem 0 0"
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".mbr-row": {
-                "-webkit-flex-direction": "column",
-                "flex-direction": "column"
-              },
-              ".mbr-section-title,.mbr-section-subtitle,.mbr-section-btn": {
-                "text-align": "center"
-              }
-            },
-            "a.control": {
-              "position": "absolute",
-              "width": "16px",
-              "height": "16px",
-              "right": "48px",
-              "top": "32px",
-              ".close": {
-                "position": "relative",
-                "width": "32px",
-                "height": "32px"
-              },
-              ".close:before, .close:after": {
-                "position": "absolute",
-                "left": "15px",
-                "content": "' '",
-                "height": "33px",
-                "width": "2px",
-                "background-color": "#fff"
-              },
-              ".close:before": {
-                "-webkit-transform": "rotate(45deg)",
-                "transform": "rotate(45deg)"
-              },
-              ".close:after": {
-                "-webkit-transform": "rotate(-45deg)",
-                "transform": "rotate(-45deg)"
-              }
-            }
-          },
-          "_name": "lightbox4",
-          "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"lightbox4 mbr-section\" group=\"Lightbox\" plugins=\"amp-main, amp-image-lightbox\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n    <select title=\"Images\" name=\"imagesAmount\">\n        <option value=\"1\">1</option>\n        <option value=\"2\">2</option>\n        <option value=\"3\">3</option>\n        <option value=\"4\" selected>4</option>\n        <option value=\"5\">5</option>\n        <option value=\"6\">6</option>\n    </select>\n    \n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    \n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"mbr-row\">\n        <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-5\">\n            <div class=\"text-wrap\">\n                <h2 class=\"mbr-fonts-style mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Examples of Conventions of the Rights of the Child</h2>\n                <h3 class=\"mbr-fonts-style mbr-section-subtitle\" mbr-theme-style=\"display-6\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle,.mbr-section-btn\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                </h3>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-danger\" href=\"https://mobiri.se\">Learn More</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"img-block\">\n            <amp-img on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/image-9.png\" layout=\"responsive\" height=\"496.219\" class=\"mobirise-loader image-without-link\" width=\"350.993822169059\" alt=\"Mobirise\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/image-9.png\" alt=\"Mobirise\">\n            </amp-img>\n            <amp-img on=\"tap:lightbox2\" role=\"button\" mbr-class=\"{'super-hide': imagesAmount < 2}\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/image-10.png\" class=\"mobirise-loader image-without-link\" layout=\"responsive\" height=\"496.297\" width=\"350.99025466342255\" alt=\"Mobirise\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/image-10.png\" alt=\"Mobirise\">\n            </amp-img>\n            <amp-img on=\"tap:lightbox3\" role=\"button\" mbr-class=\"{'super-hide': imagesAmount < 3}\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/image-11.png\" class=\"mobirise-loader image-without-link\" layout=\"responsive\" height=\"562.562\" width=\"350.9918890814558\" alt=\"Mobirise\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/image-11.png\" alt=\"Mobirise\">\n            </amp-img>\n            <amp-img on=\"tap:lightbox4\" role=\"button\" mbr-class=\"{'super-hide': imagesAmount < 4}\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/image-12.png\" class=\"mobirise-loader image-without-link\" layout=\"responsive\" height=\"218.188\" width=\"350.9980869565217\" alt=\"Mobirise\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/image-12.png\" alt=\"Mobirise\">\n            </amp-img>\n            <amp-img on=\"tap:lightbox5\" role=\"button\" mbr-class=\"{'super-hide': imagesAmount < 5}\" tabindex=\"0\" src=\"@THEME_PATH@/components/_images/img/05.jpg\" class=\"mobirise-loader image-without-link\" layout=\"responsive\" height=\"9\" width=\"16\" alt=\"Mobirise\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/05.jpg\" alt=\"Mobirise\">\n            </amp-img>\n            <amp-img on=\"tap:lightbox6\" role=\"button\" mbr-class=\"{'super-hide': imagesAmount < 6}\" tabindex=\"0\" src=\"@THEME_PATH@/components/_images/img/06.jpg\" class=\"mobirise-loader image-without-link\" layout=\"responsive\" height=\"9\" width=\"16\" alt=\"Mobirise\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/06.jpg\" alt=\"Mobirise\">\n            </amp-img>\n        </div>\n    </div>\n<amp-image-lightbox id=\"lightbox1\" layout=\"nodisplay\"></amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox2\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 2}\">\n    <a class=\"control\" data-close-button-aria-label=\"Close\">\n        <span class=\"close\"></span>\n    </a>\n</amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox3\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 3}\">\n    <a class=\"control\" data-close-button-aria-label=\"Close\">\n        <span class=\"close\"></span>\n    </a>\n</amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox4\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 4}\">\n    <a class=\"control\" data-close-button-aria-label=\"Close\">\n        <span class=\"close\"></span>\n    </a>\n</amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox5\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 5}\">\n    <a class=\"control\" data-close-button-aria-label=\"Close\">\n        <span class=\"close\"></span>\n    </a>\n</amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox6\" layout=\"nodisplay\" mbr-class=\"{'super-hide': imagesAmount < 6}\">\n    <a class=\"control\" data-close-button-aria-label=\"Close\">\n        <span class=\"close\"></span>\n    </a>\n</amp-image-lightbox>\n</section>",
-          "_cid": "tViseb7iTt",
-          "_anchor": "lightbox4-6c",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            ".main-row": {
-              "& when (@reverseContent)": {
-                "-webkit-flex-direction": "row-reverse",
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".second-row": {
-              "padding-top": "2rem"
-            },
-            ".group-title": {
-              "color": "#232323",
-              "margin": "0",
-              "padding": "0 0 1rem 0",
-              "text-align": "left"
-            },
-            ".text": {
-              "margin": "0",
-              "padding": "0",
-              "text-align": "left"
-            },
-            ".items": {
-              "padding-right": "30px"
-            },
-            ".map-placeholder": {
-              "display": "none",
-              "h4": {
-                "padding-top": "5rem",
-                "color": "#232323",
-                "text-align": "center"
-              }
-            },
-            ".list-item": {
-              "display": "flex",
-              "padding": "10px 0",
-              "border-bottom": "1px dotted rgba(255, 255, 255, 0.2)",
-              "text-align": "left",
-              "& > .icon-wrap": {
-                "display": "flex",
-                "margin": "auto",
-                "margin-right": "1rem",
-                "width": "~\"@{iconsSize}rem\"",
-                "height": "~\"@{iconsSize}rem\""
-              },
-              ".mbr-iconfont": {
-                "padding-right": "1rem",
-                "color": "@iconsColor",
-                "margin": "auto",
-                "font-size": "~\"@{iconsSize}rem\""
-              },
-              "h5": {
-                "margin": "0",
-                "width": "100%"
-              }
-            },
-            ".google-map": {
-              "height": "325px",
-              "position": "relative",
-              "width": "100%",
-              "iframe": {
-                "height": "100%",
-                "width": "100%"
-              },
-              "[data-state-details]": {
-                "color": "#ffffff",
-                "height": "1.5em",
-                "margin-top": "-0.75em",
-                "padding-left": "1.25rem",
-                "padding-right": "1.25rem",
-                "position": "absolute",
-                "text-align": "center",
-                "top": "50%",
-                "width": "100%"
-              },
-              "&[data-state]": {
-                "background": "#e9e5dc"
-              },
-              "&[data-state=\"loading\"]": {
-                "[data-state-details]": {
-                  "display": "none"
-                }
-              }
-            },
-            ".icons-list > .icon-wrap": {
-              "display": "inline-block",
-              "width": "~\"@{socialSize}rem\"",
-              "height": "~\"@{socialSize}rem\""
-            },
-            ".amp-iconfont-social": {
-              "color": "@socialColor",
-              "font-size": "~\"@{socialSize}rem\"",
-              "&:hover": {
-                "opacity": "0.7"
-              }
-            },
-            ".icons-list": {
-              "a:not(:last-child)": {
-                "margin-right": "1rem"
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".main-row": {
-                "& when (@reverseContent)": {
-                  "-webkit-flex-direction": "column-reverse",
-                  "flex-direction": "column-reverse",
-                  "-webkit-flex-wrap": "nowrap",
-                  "flex-wrap": "nowrap"
-                }
-              },
-              "& when not (@reverseContent)": {
-                ".map-wrap": {
-                  "padding-bottom": "2rem"
-                }
-              },
-              "& when (@reverseContent)": {
-                ".map-wrap": {
-                  "padding-top": "2rem"
-                }
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".first-row, .second-row": {
-                "-webkit-justify-content": "flex-start",
-                "justify-content": "flex-start",
-                "& > div:not(:last-child)": {
-                  "padding-bottom": "2rem"
-                }
-              },
-              ".second-row": {
-                "padding-top": "0"
-              }
-            }
-          },
-          "_name": "footer6",
-          "_sourceTheme": "lightamp",
-          "_customHTML": "<section class=\"footer6 map\" group=\"Footers\" plugins=\"amp-main, amp-iframe\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"range\" inline=\"\" name=\"listItems\" title=\"List Items\" min=\"0\" max=\"6\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Marks\" name=\"showIcons\" checked=\"\" condition=\"listItems > 0\">\n        <input type=\"range\" inline=\"\" title=\"Marks Size\" name=\"iconsSize\" min=\"0.2\" max=\"2\" step=\"0.1\" value=\"0.5\" condition=\"showIcons &amp;&amp; listItems > 0\">\n        <input type=\"color\" title=\"Marks Color\" name=\"iconsColor\" value=\"#232323\" condition=\"showIcons &amp;&amp; listItems > 0\">\n        <input type=\"range\" inline=\"\" title=\"Icons Count\" name=\"socialCount\" min=\"0\" max=\"6\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Icons Color\" name=\"socialColor\" value=\"#464646\" condition=\"socialCount > 0\">\n        <input type=\"range\" inline=\"\" title=\"Icons Size\" name=\"socialSize\" min=\"1\" max=\"3\" step=\"0.1\" value=\"2\" condition=\"socialCount > 0\">\n        <input type=\"checkbox\" title=\"Map on Left/Right\" name=\"reverseContent\" checked=\"\">\n        \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ececec\" selected=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"Australia\n\" value=\"Australia\n\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center main-row\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 map-wrap\">\n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n                <div class=\"map-placeholder mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                </div>\n            </div>\n\n            <div class=\"mbr-col-md-12 mbr-col-lg-6\">\n                <div class=\"mbr-row first-row mbr-justify-content-center\">\n                    <div class=\"mbr-col-md-6\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                            JKAA</h3>\n                        <p class=\"mbr-text text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text\">Janusz Korczak Association<br>Australia</p>\n                    </div>\n                    <div class=\"mbr-col-md-6\" mbr-if=\"listItems > 0\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                            Links\n                        </h3>\n                        <div class=\"items\" mbr-list=\"\" mbr-list-grow=\"listItems\">\n                            <div class=\"list-item\">\n                                <div class=\"icon-wrap\">\n                                    <span mbr-icon=\"\" class=\"mbr-iconfont fa-stop fa\" mbr-if=\"showIcons\"></span>\n                                </div>\n                                <h5 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list-item\">\n                                    Website builder\n                                </h5>\n                            </div>\n                            \n                            \n                        </div>\n                    </div>\n                </div>\n                <div class=\"mbr-row second-row mbr-justify-content-center\">\n                    <div class=\"mbr-col-md-6\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\"></h3>\n                        <p class=\"mbr-text text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text\"></p>\n                    </div>\n                    <div class=\"mbr-col-md-6\" mbr-if=\"socialCount > 0\">\n                        <h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle &amp;&amp; socialCount > 0\" data-app-selector=\".group-title, .icons-list\">\n                            Follow Us\n                        </h3>\n                        <div class=\"icons-list\" mbr-list=\"\" mbr-list-grow=\"socialCount\">\n                            <a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\" class=\"icon-wrap\">\n                                <span mbr-icon=\"\" class=\"amp-iconfont amp-iconfont-social fa-youtube fa\"></span>\n                            </a>\n                            \n                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "footer6-6d",
-          "_isUserblock": true,
-          "_cid": "tVisYo2DYM",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
