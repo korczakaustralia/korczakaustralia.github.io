@@ -60,7 +60,10 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "mbrsiteDomain": "kryxdpxum3"
+    "mbrsiteDomain": "kryxdpxum3",
+    "publishType": "local",
+    "mbrsite": "mbrsite://%7B%22id%22%3A1440063%2C%22domain%22%3A%228zo3vzgb0a.mobirisesite.com%22%7D",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
