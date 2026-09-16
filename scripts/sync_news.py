@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from bs4 import BeautifulSoup, NavigableString
 
 DOC_URL = ('https://docs.google.com/document/d/e/'
-           '2PACX-1vRTtNvswhI3sYeYQ-33kGnWT1EeMh_l4gJJEXNNNKeJbHa4XSn7PNzM3yOv-V1hjfFP9Ynr6ncFy_uZ/pub')
+           '2PACX-1vRiXpXBgdkzK0mCCFCphVtA0mPc__KJ7KDJo5ag4UAsDNwvItWhjk_vh3Y4UZH2VX_DfnwpA7G9ryGv/pub')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEWS_PAGE = os.path.join(ROOT, 'news.html')
 IMG_DIR = os.path.join(ROOT, 'assets', 'images', 'updates')

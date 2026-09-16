@@ -57,6 +57,7 @@ body{margin: 0;-webkit-text-size-adjust: 100%;text-size-adjust: 100%;}
 .animated-text{animation: mbr-marquee calc(20s - 19s * var(--duration, 60) / 100) linear infinite;}
 @keyframes mbr-marquee{from{transform: translateX(100vw);}to{transform: translateX(-100%);}}
 
+
 /* ---------------------------------------------------------------------------
    News page: "Latest Updates" (filled from the Google Doc) and the featured item
    --------------------------------------------------------------------------- */
@@ -70,6 +71,8 @@ body{margin: 0;-webkit-text-size-adjust: 100%;text-size-adjust: 100%;}
 .news-updates .news-update ul,.news-updates .news-update ol{padding-left: 1.5rem;margin-bottom: 1rem;}
 .news-updates .news-update li{color: #15181b;}
 .news-updates .news-update a{color: #0049ff;}
+.news-updates .news-update table{border-collapse: collapse;margin-bottom: 1rem;max-width: 100%;}
+.news-updates .news-update td,.news-updates .news-update th{border: 1px solid #cccccc;padding: .4rem .6rem;vertical-align: top;}
 .news-updates .news-update-meta{color: #808080;font-size: .8em;}
 .news-updates .news-update-featured{display: flex;flex-wrap: wrap;align-items: center;gap: 2rem;}
 .news-updates .news-update-featured .news-update-text{flex: 1 1 320px;}

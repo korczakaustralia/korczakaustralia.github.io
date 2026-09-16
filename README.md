@@ -38,18 +38,18 @@ CNAME                                 custom domain for GitHub Pages
 | contact.html | Contact |
 | other *.html | individual news/event articles, named after their title |
 
-Pages that nothing linked to (old drafts and duplicates) have been removed.
+Old drafts and duplicate pages that nothing linked to have been removed.
 
 ## News: automatic updates from Google Docs
 
 The "Latest Updates" block at the top of `news.html` is generated from the published Google Doc
-"Website Updates". Whatever is in that document is shown on the public site, so keep the
-document to things meant for publication.
+"korczakaustralia News". Whatever is in that document is shown on the public site.
 
 * `scripts/sync_news.py` downloads the published document, converts headings, paragraphs,
   bold/italic, links, lists, tables and images into the site's own markup, saves any images into
   `assets/images/updates/`, and rewrites the block between `<!-- news:start -->` and
-  `<!-- news:end -->` in `news.html`. Never edit between those two markers by hand.
+  `<!-- news:end -->` in `news.html`. Never edit between those two markers by hand. While the
+  document is empty the block keeps its placeholder text.
 * `.github/workflows/sync-news.yml` runs the script every 30 minutes (GitHub's schedule is
   best-effort, so allow up to an hour) and commits only when the content actually changed.
   You can also run it immediately from the repository's **Actions** tab → *Sync news from
@@ -58,6 +58,7 @@ document to things meant for publication.
   **Read and write permissions**, otherwise the commit step cannot push.
 * Formatting in the doc: use *Heading 1* for the title of an update and *Heading 2* for
   sub-headings; the document's *Title* style is ignored. Links, bold and italic come through.
+* To point at a different document, change `DOC_URL` at the top of `scripts/sync_news.py`.
 
 ## Editing
 
