@@ -19,7 +19,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEWS_PAGE = os.path.join(ROOT, 'news.html')
 IMG_DIR = os.path.join(ROOT, 'assets', 'images', 'updates')
 START, END = '<!-- news:start', '<!-- news:end -->'
-UA = {'User-Agent': 'Mozilla/5.0 (compatible; korczakaustralia-news-sync)'}
+UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36',
+      'Accept': 'text/html,application/xhtml+xml', 'Accept-Language': 'en-AU,en;q=0.9'}
 
 
 def fetch(url):
@@ -68,6 +69,8 @@ def convert(doc_html, download_images=True):
     src = BeautifulSoup(doc_html, 'html.parser')
     flags = style_classes(src)
     body = src.find(id='contents') or src.body or src
+    print(f'fetched {len(doc_html)} bytes; contents div {"found" if src.find(id="contents") else "NOT found"}; '
+          f'{len(body.find_all(["h1","h2","h3","p"]))} headings/paragraphs')
     out = BeautifulSoup('', 'html.parser')
     keep = set()
 

@@ -36,7 +36,8 @@ jobs:
         run: |
           git config user.name  "news-sync[bot]"
           git config user.email "news-sync@users.noreply.github.com"
-          git add news.html assets/images/updates
+          git add news.html
+          [ -d assets/images/updates ] && git add assets/images/updates
           if git diff --cached --quiet; then
             echo "No change in the Google Doc."
           else
