@@ -61,7 +61,7 @@ body{margin: 0;-webkit-text-size-adjust: 100%;text-size-adjust: 100%;}
 /* ---------------------------------------------------------------------------
    News page: "Latest Updates" (filled from the Google Doc) and the featured item
    --------------------------------------------------------------------------- */
-.news-updates{padding-top: 75px;padding-bottom: 30px;background-color: #ffffff;}
+.news-updates{padding-top: 75px;padding-bottom: 75px;background-color: #ffffff;}
 .news-updates + .news-updates{padding-top: 0;}
 .news-updates .news-update{border: 1px solid #cccccc;padding: 2rem;margin-bottom: 2rem;}
 .news-updates .news-update > :last-child,.news-updates .news-update p:last-child{margin-bottom: 0;}

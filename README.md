@@ -31,18 +31,18 @@ CNAME                                 custom domain for GitHub Pages
 | korczak.html | Korczak |
 | about.html | About |
 | stories.html | Stories |
-| news.html | News (Latest Updates + news cards) |
+| news.html | News (content comes only from the Google Doc) |
 | events.html | Events |
 | activities.html | Activities |
 | childrens-rights.html | Children's Rights |
 | contact.html | Contact |
 | other *.html | individual news/event articles, named after their title |
 
-Old drafts and duplicate pages that nothing linked to have been removed.
+Old drafts, duplicates and the former hand-made news articles have been removed; News now comes only from the Google Doc.
 
 ## News: automatic updates from Google Docs
 
-The "Latest Updates" block at the top of `news.html` is generated from the published Google Doc
+The whole content of `news.html` (under the "Latest News" heading) is generated from the published Google Doc
 "korczakaustralia News". Whatever is in that document is shown on the public site.
 
 * `scripts/sync_news.py` downloads the published document, converts headings, paragraphs,
