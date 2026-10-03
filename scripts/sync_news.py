@@ -7,7 +7,7 @@ Usage:  python3 scripts/sync_news.py            (fetches the doc)
 The block between <!-- news:start --> and <!-- news:end --> in news.html is replaced with
 the document's content, converted to the site's own markup (Reem Kufi display classes).
 Images in the doc are downloaded into assets/images/updates/ so the site never depends on
-Google's image URLs. Exit code 0 always; prints "changed" or "unchanged".
+Google's image URLs. Prints "changed" or "unchanged"; exits 1 if the doc comes back empty (so the Action goes red).
 """
 import hashlib, os, re, sys, urllib.parse, urllib.request
 from datetime import datetime, timezone
@@ -26,6 +26,21 @@ UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 def fetch(url):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=60) as r:
+        return r.read()
+
+
+def fetch_doc():
+    """Fetch the published doc, side-stepping stale copies in Google's edge cache.
+
+    Google has been seen serving an old, empty snapshot of the published doc to some regions
+    (the GitHub runner included) while the current version is served elsewhere. A unique query
+    string forces a fresh copy, and Cache-Control headers ask intermediaries not to reuse one.
+    """
+    sep = '&' if '?' in DOC_URL else '?'
+    url = f'{DOC_URL}{sep}cb={int(datetime.now(timezone.utc).timestamp())}'
+    req = urllib.request.Request(url, headers={**UA, 'Cache-Control': 'no-cache', 'Pragma': 'no-cache'})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        print(f'GET {r.geturl()} -> {r.status}')
         return r.read()
 
 
@@ -69,7 +84,9 @@ def convert(doc_html, download_images=True):
     src = BeautifulSoup(doc_html, 'html.parser')
     flags = style_classes(src)
     body = src.find(id='contents') or src.body or src
-    print(f'fetched {len(doc_html)} bytes; contents div {"found" if src.find(id="contents") else "NOT found"}; '
+    title = src.title.get_text(strip=True) if src.title else '(no <title>)'
+    print(f'fetched {len(doc_html)} bytes; doc title: {title!r}; '
+          f'contents div {"found" if src.find(id="contents") else "NOT found"}; '
           f'{len(body.find_all(["h1","h2","h3","p"]))} headings/paragraphs')
     out = BeautifulSoup('', 'html.parser')
     keep = set()
@@ -152,10 +169,14 @@ def convert(doc_html, download_images=True):
 
 
 def main():
-    doc_html = open(sys.argv[1], 'rb').read() if len(sys.argv) > 1 else fetch(DOC_URL)
+    doc_html = open(sys.argv[1], 'rb').read() if len(sys.argv) > 1 else fetch_doc()
     block, keep = convert(doc_html, download_images=len(sys.argv) == 1)
     if block is None:
-        print('document is empty; leaving news.html unchanged'); return
+        # An empty document almost always means Google served us a stale or wrong page, not that
+        # the news was deliberately cleared. Fail the run so it shows red instead of a false green.
+        print('::error::Google Doc came back with no content; news.html left unchanged. '
+              'Check the published-doc URL and that the doc is still published.')
+        sys.exit(1)
     page = open(NEWS_PAGE, encoding='utf-8').read()
     i, j = page.index(START), page.index(END)
     i = page.index('-->', i) + 3
