@@ -128,6 +128,8 @@ def convert(doc_html, download_images=True):
     for el in body.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'ul', 'ol', 'table'], recursive=True):
         if el.find_parent(['li', 'table']) and el.name != 'table':
             continue  # handled with its list / table
+        if el.name != 'table' and re.fullmatch(r'\s*[-–—_]{5,}\s*', el.get_text()):
+            break  # a line of dashes ends the news; anything below it is drafts for other pages
         cls = el.get('class', [])
         if 'title' in cls or 'subtitle' in cls:
             continue  # the document title is not part of the news

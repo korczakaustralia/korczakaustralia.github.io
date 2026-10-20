@@ -58,6 +58,8 @@ The whole content of `news.html` (under the "Latest News" heading) is generated 
   **Read and write permissions**, otherwise the commit step cannot push.
 * Formatting in the doc: use *Heading 1* for the title of an update and *Heading 2* for
   sub-headings; the document's *Title* style is ignored. Links, bold and italic come through.
+* A line made only of dashes (`-----`) ends the news: anything below it in the doc (drafts for
+  other pages, notes) is not published.
 * To point at a different document, change `DOC_URL` at the top of `scripts/sync_news.py`.
 
 ## Editing
