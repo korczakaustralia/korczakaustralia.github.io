@@ -98,6 +98,12 @@ body{margin: 0;-webkit-text-size-adjust: 100%;text-size-adjust: 100%;}
 
 .news-updates .news-update .more-btn:hover{background-color: #333333;color: #ffffff;}
 
+/* Larger, bold text for important documents (the 2024 Geneva Declaration) */
+.news-updates .news-update.large-text p,.news-updates .news-update.large-text li{font-size: 1.2rem;font-weight: 700;}
+
+/* A wavy line between sections of an article */
+.news-updates .news-update hr.wavy-divider{border: 0;height: 20px;margin: 2.5rem 0 2rem;background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cpath d='M0 10 Q10 0 20 10 T40 10' fill='none' stroke='%23f19a60' stroke-width='3'/%3E%3C/svg%3E") repeat-x center;}
+
 .news-updates .news-update ol li,.news-updates .news-update ul li{margin-bottom: .6rem;}
 
 /* Mobirise theme rules shared by every page */
