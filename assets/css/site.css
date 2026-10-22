@@ -98,6 +98,9 @@ body{margin: 0;-webkit-text-size-adjust: 100%;text-size-adjust: 100%;}
 
 .news-updates .news-update .more-btn:hover{background-color: #333333;color: #ffffff;}
 
+/* News page: larger text so the updates are easier to read */
+#latest-updates .news-update p,#latest-updates .news-update li{font-size: 1.1rem;}
+
 /* Larger, bold text for important documents (the 2024 Geneva Declaration) */
 .news-updates .news-update.large-text p,.news-updates .news-update.large-text li{font-size: 1.2rem;font-weight: 700;}
 
